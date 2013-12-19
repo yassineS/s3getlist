@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while read F
+do
+s3cmd get $F $2 #download the file
+done <$1
