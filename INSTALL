@@ -1,8 +1,12 @@
 #!/bin/bash
 
-sudo apt-get install s3cmd -y #install dependency: s3cmd
+if which s3cmd >/dev/null; then
+    echo 's3cmd installed
+else
+    sudo apt-get install s3cmd -y #install dependency: s3cmd
 
-s3cmd --configure #prompt the installation of s3cmd
+    s3cmd --configure #prompt the installation of s3cmd
+fi
 
 sudo cp ./s3getlist /usr/bin #copy the script to /usr/bin/ 
 
