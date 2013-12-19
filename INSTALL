@@ -2,6 +2,8 @@
 
 sudo apt-get install s3cmd -y #install dependency: s3cmd
 
+s3cmd --configure #prompt the installation of s3cmd
+
 sudo cp ./s3getlist /usr/bin #copy the script to /usr/bin/ 
 
 sudo chmod 770 /usr/bin/s3getlist   #changing the permissions to make s3getlist executable
