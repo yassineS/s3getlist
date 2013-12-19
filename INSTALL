@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo apt-get install s3cmd -y #install dependency: s3cmd
+
+sudo cp ./s3getlist /usr/bin #copy the script to /usr/bin/ 
+
+sudo chmod 770 /usr/bin/s3getlist   #changing the permissions to make s3getlist executable
+
+sudo echo "export PATH=$PATH:/usr/bin" >> ~/.bashrc  #making sure that the countaining directory is in the PATH
+
