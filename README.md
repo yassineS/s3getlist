@@ -1,6 +1,8 @@
 s3getlist
 =========
 
+[![Join the chat at https://gitter.im/yassineS/s3getlist](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yassineS/s3getlist?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A simple script that allows the user to download a list of files from an AWS S3 bucket.
 
 s3getlist takes as input a text file containing a list of files on S3 (full path) and download it to a given directory.
